@@ -1,3 +1,4 @@
 name: 伯克
 markdown: redcarpet
 pygments: true
+excerpt_separator: ""
