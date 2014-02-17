@@ -16,18 +16,16 @@ X.helper(
 用CoffeScript就应该写成
 {% highlight coffeescript %}
 X.helper
-    name: 'myName'
-  ,
-    ->
-      this.name
+  name: 'myName'
+  , ->
+    @name
 {% endhighlight %}
-需要注意的是，每一个argument都需要缩进两个单位。而用来分割argument的逗号只需缩进一个单位。
+需要注意的是，用来分割argument的逗号只需缩进一个单位，每个argument可以缩进一个单位也可以紧跟逗号。
 特别应该注意的是，如果某个function的第一个argument是一个function，以前面为例，应该写成
 {% highlight coffeescript %}
 X.helper ->
-      this.name
-  ,
-    name: 'myName'
+    @name
+  , name: 'myName'
 {% endhighlight %}
 注意箭头需要紧跟function call之后一个空格。
 
