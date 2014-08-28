@@ -64,6 +64,7 @@ html, body {
   height: 518px;
   position: relative;
   top: -539px;
+  margin: 0 auto;
   background: url("dialog.png") no-repeat;
   background-size: 100% 100%;
   display: none;
