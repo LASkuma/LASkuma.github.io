@@ -85,6 +85,7 @@ $(document).ready(function() {
       }
       changeResult(answer[result]);
       $(".dialog").fadeIn();
+      $(".bottom").addClass("moved");
     }
   });
 });
