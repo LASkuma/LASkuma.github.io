@@ -84,9 +84,8 @@ $(document).ready(function() {
         result = 4;
       }
       changeResult(answer[result]);
-      $(".dialog").fadeIn(400, function() {
-        $(".bottom").addClass("moved");
-      });
+      $(".frame").hide();
+      $(".dialog").fadeIn();
     }
   });
 });
