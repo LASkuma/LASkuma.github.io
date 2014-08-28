@@ -61,7 +61,7 @@ X.helper
     age:2
 {% endhighlight %}
 就可以被编译成理想的js
-{% highlight javascript %}
+{% hightlight javascript %}
 X.helper({
   name: 'user1',
   age: 1
