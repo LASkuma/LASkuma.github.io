@@ -7,31 +7,32 @@ body {
 
 .frame {
   position: relative;
-  left: 2.1%;
   background: url('dialog.png') no-repeat;
   background-size: 100% 100%;
   height: 518px;
+  display: block;
 }
 
 .question {
+  width: 80%;
+  margin: 0 auto;
   font-family: sans-serif;
   position: relative;
   top: 85px;
-  left: 6%;
   height: auto;
   font-size: 0.6em;
 }
 
 .choices {
   position: relative;
+  width: 80%;
+  margin: 0 auto;
   bottom: -125px;
-  left: 6.3%;
 }
 
 .choices a {
     /*background-color: rgba(0, 0, 0, .15);*/
     height: 45px;
-    width: 81.4%;
     margin-top: 20px;
     display: block;
     font-family: sans-serif;
@@ -58,7 +59,7 @@ body {
 .dialog {
   position: relative;
   background: url("dialog.png") no-repeat;
-  left: 2%;
+  background-size: 100% 100%;
   top: -539px;
   height: 518px;
   display: none;
