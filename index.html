@@ -1,13 +1,48 @@
----
-layout: default
-title: 伯克
----
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="jquery-1.10.2.min.js"></script>
+  <script src="application.js"></script>
+</head>
+<body>
+  <div class="top"></div>
+  <div class="frame">
+    <div class="question">
+      <h1></h1>
+    </div>
+    <div class="choices">
+    <a class="choice" id="A">
+      <div>
+      A <span></span>
+      </div>
+    </a>
+    <a class="choice" id="B">
+      <div>
+        B <span></span>
+      </div>
+    </a>
+    <a class="choice" id="C">
+      <div>
+        C <span></span>
+      </div>
+    </a>
+    <a class="choice" id="D">
+      <div>
+        D <span></span>
+      </div>
+    </a>
+    </div>
+  </div>
+  <div class="dialog">
+    <div>
+      <h1>经测试，你是</h1>
+      <h2>放任自流型</h2>
+      <h3>普通人类，不是伪君子也不是假小人。会分辨利弊，会抵御一般诱惑，但面对也只是摇摆不定。你明白毒品的害处，很想尝试，但千万别碰，因为一旦染上也戒不掉。</h3>
+    </div>
+  </div>
+  <div class="bottom"></div>
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+</body>
+</html>
