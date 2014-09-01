@@ -1,53 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, user-scalable=no">
-  <script src="jquery-1.10.2.min.js"></script>
-  <script src="application.js"></script>
-</head>
-<body>
-  <div class="top">
-    <img src="a.png"/>
-  </div>
-  <div class="frame">
-    <div class="question">
-      <h1></h1>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1">
+    <script src="jquery-1.10.2.min.js"></script>
+    <style>
+    .center{display:block;margin: 0 auto;}
+    .music-btn{width:135px;height:135px;}
+    .listen{margin-bottom: 56px;}
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <img src="images/a.png"/>
     </div>
-    <div class="choices">
-      <a class="choice" id="A">
-        <div>
-        A <span></span>
-        </div>
-      </a>
-      <a class="choice" id="B">
-        <div>
-          B <span></span>
-        </div>
-      </a>
-      <a class="choice" id="C">
-        <div>
-          C <span></span>
-        </div>
-      </a>
-      <a class="choice" id="D">
-        <div>
-          D <span></span>
-        </div>
-      </a>
+    <div class="frame">
+      <div class="question">
+        <h1></h1>
+      </div>
+      <div class="choices">
+        <a class="choice" id="A">
+          <div>
+            A <span></span>
+          </div>
+        </a>
+        <a class="choice" id="B">
+          <div>
+            B <span></span>
+          </div>
+        </a>
+        <a class="choice" id="C">
+          <div>
+            C <span></span>
+          </div>
+        </a>
+        <a class="choice" id="D">
+          <div>
+            D <span></span>
+          </div>
+        </a>
+      </div>
     </div>
-  </div>
-  <div class="dialog">
-    <div>
-      <h1>经测试，你属于</h1>
-      <h2></h2>
-      <h3></h3>
+    <div class="dialog">
+      <div>
+        <h1>经测试，你属于</h1>
+        <h2></h2>
+        <h3></h3>
+      </div>
     </div>
-  </div>
-  <div class="bottom">
-    <img src="b.png"/>
-  </div>
+    <div class="feel">
+      <img src="images/1.png" />
+    </div>
+    <div class="anim">
+      <img src="images/anim.gif" />
+    </div>
+    <div class="listen">
+      <img src="images/2.png" />
+      <a class="center music-btn" data-status="pause"><img src="images/music_play.png"/></a>
+    </div>
+    <div class="exp">
+      <img src="images/3.png" />
+      <img src="images/item1.png" />
+      <img src="images/item2.png" />
+      <img src="images/item3.png" />
+    </div>
+    <div class="download" style="margin-top:50px;">
+      <img src="images/logo.png" class="center" style="width:190px;height:111px;" />
+      <a href="http://kandian.360.cn/">
+        <img src="images/download.png" class="center" style="width:124px;42px;"/>
+      </a>
+      <img src="images/follow.png" class="center" style="width:360px;49px;"/>
 
-</body>
+    </div>
+	<audio id="mp3" src="http://kandian.360.cn/static/20140901.mp3" preload="none"></audio>
+    <script src="application.js"></script>
+  </body>
 </html>

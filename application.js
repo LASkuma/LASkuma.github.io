@@ -1,30 +1,30 @@
 $(document).ready(function() {
   var content =   [{
-                    q:"减肥的关键时期，有好友请你出去吃大餐畅聊人生的话，你会：",
+                    q:"第（1/5）题 减肥的关键时期，有好友请你出去吃大餐畅聊人生的话，你会：",
                     a:"毫不犹豫，吃后再减",
                     b:"前往赴约，多少吃点",
                     c:"只是聊聊，不动筷子",
                     d:"明确告知，换地方聚"
                 }, {
-                    q:"偶然的一个机会，你知道了同事的小秘密，o(╯□╰)o你会：",
+                    q:"第（2/5）题 偶然的一个机会，你知道了同事的小秘密，o(╯□╰)o你会：",
                     a:"马上传播，天下皆知",
                     b:"小范围内，偶尔传播",
                     c:"要挟朋友，偶然玩笑",
                     d:"守口如瓶，如同不知"
                 }, {
-                    q:"你的前任好久不联系了，突然有天下大雨的时候要你去陪陪ta，你会：",
+                    q:"第（3/5）题 你的前任好久不联系了，突然有天下大雨的时候要你去陪陪ta，你会：",
                     a:"立即前往，风雨无阻",
                     b:"片刻犹豫，保持联系",
                     c:"趁机要挟，开出条件",
                     d:"挂断电话，就此别过"
                 }, {
-                    q:"领导布置下一个工作任务，要求一周内完成，你会：",
+                    q:"第（4/5）题 领导布置下一个工作任务，要求一周内完成，你会：",
                     a:"卧槽卧槽，还有一天!",
                     b:"持续懒散，临近突击",
                     c:"放松一天，然后开工",
                     d:"立即进行，熬夜完成"
                 }, {
-                    q:"最近咳嗽的比较厉害，家人建议戒烟，你会：",
+                    q:"第（5/5）题 最近咳嗽的比较厉害，家人建议戒烟，你会：",
                     a:"当面答应，背后继续",
                     b:"坚持两天，复吸三天",
                     c:"尝试戒烟，坚持数月",
@@ -120,3 +120,27 @@ function changeResult(answer) {
   $(".dialog div h2").html(answer.name);
   $(".dialog div h3").html(answer.description);
 }
+
+$(function(){
+	var aud = $('audio'),
+		playBtn = $('.music-btn'),
+		bgImages = {
+			playing: 'images/music_play.png',
+			pause: 'images/music_pause.png'
+		};
+	playBtn.status = function(val){
+		var s = playBtn.attr('data-status');
+		playBtn.find('img').attr('src',bgImages[s]);
+		return playBtn.attr('data-status',val);
+	};
+	playBtn.click(function(){
+		var s = playBtn.attr('data-status');
+		if(s == 'pause') {
+			aud[0].play();
+			playBtn.status('playing');
+		} else {
+			aud[0].pause();
+			playBtn.status('pause');
+		}
+	});
+});
